@@ -8,13 +8,12 @@ public class AverageOfNumber {
         byte totalNumber = scanner.nextByte();
 
         for (int i = 1; i <= totalNumber; i++) {
-            System.out.print("Number"+ i+": ");
+            System.out.print("Number_"+ i+": ");
             int userInput = scanner.nextInt();
             sum = sum + userInput;  
         }
 
         double average = sum / totalNumber;
-
         System.out.println("Average: "+ average);
     }
 }
