@@ -1,1 +1,1 @@
-# Java Projects is all is repository is about
+# Java Projects is all this repository is about
