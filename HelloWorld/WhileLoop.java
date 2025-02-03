@@ -7,7 +7,8 @@ public class WhileLoop {
 
         while(!guess.equals("QUIT") ){
             System.out.print("Guess a Word: ");
-            guess = scanner.next().toUpperCase();   
+            guess = scanner.next().toUpperCase(); 
+            System.out.println(guess);  
         }
 
         scanner.close();
