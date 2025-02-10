@@ -7,13 +7,11 @@ public class MortgageCalculation {
         final byte PERCENT = 100;
 
         int principal = 0;
-        float annualRate = 0;
         float monthRate = 0;
         double numberOfPayment  = 0;
 
 
         Scanner scanner = new Scanner(System.in);
-
         while (true) { 
             System.out.print("Principal ($1k - $1M): ");
             principal = scanner.nextInt(); 
@@ -25,7 +23,7 @@ public class MortgageCalculation {
         
         while(true){
             System.out.print("Annual Interest Rate: ");
-            annualRate = (scanner.nextFloat());
+            float annualRate = (scanner.nextFloat());
             if (annualRate >= 10 && annualRate <= 30){
                 monthRate = (annualRate / PERCENT / MONTHS_IN_YEAR);
                 break;

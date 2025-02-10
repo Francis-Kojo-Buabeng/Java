@@ -3,23 +3,19 @@ import java.util.Scanner;
 
 public class GradeSystem {
     public static void main(String[] args) {
-        int examScore = 1;
-        int assessment = 1;
-        int fee =1;
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your Exam Score: ");
-        examScore = scanner.nextInt();
+        int examScore = scanner.nextInt();
 
         System.out.print("Assessement: ");
-        assessment = scanner.nextInt();
+        int assessment = scanner.nextInt();
 
         System.out.print("fee: ");
-        fee = scanner.nextInt();
+        byte fee = scanner.nextByte();
 
-        boolean passedExam= examScore>=25;
-        boolean passedAssessment= assessment>=15;
+        boolean passedExam = examScore>=25;
+        boolean passedAssessment = assessment>=15;
         boolean feePaid = fee == 100;
 
         
