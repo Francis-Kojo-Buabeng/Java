@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class GradingSystemWithConditions {
     public static void main(String[] args) {
-        
         Scanner scanner = new Scanner(System.in);
         final byte Full_FEES = 100;
         final byte EXAM_PASS_MARK = 25;
