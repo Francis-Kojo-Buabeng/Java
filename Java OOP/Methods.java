@@ -2,45 +2,62 @@
 
 
 
-class Calculator {
-    public int add(int a, int b) { //Method
-        return a + b;
-    }
 
-     public int add(int a, int b, int c) { //Method overloading is a method of the same name with different parameters
-        return a + b + c;
+class Students {
+    String name;
+    int mark;
+    int rollno;
+
+    static int age;
+
+    public void Student(){
+        System.out.println(name + " : " + mark+ " : "+rollno+ " : " +age);
     }
 }
+
+
 
 
 public class Methods {
     public static void main(String[] args) {
-        Calculator cal = new Calculator();
-        //System.out.println(cal.add(4, 3));
-        //System.out.println(cal.add(4, 3, 54));
+         Students s1 = new Students();
+         s1.name = "Francis";
+         s1.rollno = 3;
+         s1.mark = 88;
+       
         
+        Students s2 = new Students();
+        s2.name = "Alfred";
+        s2.rollno = 4;
+        s2.mark = 90;
+        Students.age = 199;
 
-        int numbers[][] = {
-            {1, 2, 3, 22}, 
-            {4, 5, 6, 42},
-            {7, 8, 9, 12}
-        };
-        for (int n[] : numbers) {
-            for (int m : n){
-                System.out.print(m + " ");
-            }
-            System.out.println();
-        }
+        Students s3 = new Students();
+        s3.name = "Christopher";
+        s3.rollno = 5;
+        s3.mark = 98;
+ 
+        Students students[] = new Students[3];
+        students[0] = s1;
+        students[1] = s2;
+        students[2] = s3;
 
-        System.out.println();
-        System.out.println("For loop");
+        s1.Student();
 
-        for (int i = 0; i < 2; i++){
-            for (int j = 0; j < 3; j++){
-                System.out.print(numbers[i][j] + " ");
-            }
-            System.out.println();
-        }
+        // for(Students stud : students){ // called for each loop
+        //     System.out.println(stud.name);
+        // }
+
+        // StringBuffer first = new StringBuffer("Francis");
+        // System.out.println(first.capacity());
+    
+        // first.append(" Buabeng"); 
+        // System.out.println(first); 
+
        
     }
+
+   
 }
+
+
