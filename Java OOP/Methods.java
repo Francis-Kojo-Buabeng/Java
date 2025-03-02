@@ -44,9 +44,9 @@ public class Methods {
 
         s1.Student();
 
-        // for(Students stud : students){ // called for each loop
-        //     System.out.println(stud.name);
-        // }
+        for(Students stud : students){ // called for each loop
+            System.out.println(stud.name);
+        }
 
         // StringBuffer first = new StringBuffer("Francis");
         // System.out.println(first.capacity());
