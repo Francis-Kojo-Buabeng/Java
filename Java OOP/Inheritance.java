@@ -2,7 +2,7 @@
 import java.text.NumberFormat;
 
 class ParentClass{
-    String name;
+    private String name;
     int age;
     int price;
 
@@ -11,9 +11,16 @@ class ParentClass{
         age = 33;
         price = 300;
     }
+
+    public String setName(String n){
+        return name = n;
+    }
+    public String getName(){
+        return name;
+    }
 }
 
-class ChildClass extends ParentClass{
+class ChildClass extends ParentClass{ //Child class inherit the properties of the parent class with the keyword extends
     String model;
     int yearOfDate;
 }
@@ -24,6 +31,7 @@ public class Inheritance {
         obj.model = "Toyota";
         obj.age = 11;
         obj.yearOfDate = 2028;
+        obj.setName("Micheal");
 
         ParentClass objOfP = new ParentClass();
         objOfP.price = 30_000;
@@ -31,9 +39,7 @@ public class Inheritance {
         NumberFormat formatNo = NumberFormat.getCurrencyInstance();
         String formatedPrice = formatNo.format(objOfP.price);
 
-        System.out.println(NumberFormat.getCurrencyInstance().format(objOfP.price));
-
-        System.out.println("name : "+obj.name+ "\nmodel : "+ obj.model+ "\nyear of manufacture : "+ obj.yearOfDate+ "\ncar age : "+ obj.age);
+        System.out.println("name : "+obj.getName()+ "\nmodel : "+ obj.model+ "\nyear of manufacture : "+ obj.yearOfDate+ "\ncar age : "+ obj.age);
         System.out.println("price : "+ formatedPrice);
     }
 }
