@@ -8,7 +8,7 @@ public class AdvCalc extends Calc {
     }
 
     public double power(double  a, double b){
-        double resutl = Math.pow(a, b);
-        return resutl;
+        double result = Math.pow(a, b);
+        return result;
     }
 }
