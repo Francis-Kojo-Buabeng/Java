@@ -14,6 +14,8 @@ public class Method {
         byte ageUser = scanner.nextByte();
         ageObj.age(ageUser);
 
+        
+
         System.out.println("You are "+ nameObj.name(nameUser) + ", and you are "+ ageObj.age(ageUser)+ " years old");
 
         SayHi();

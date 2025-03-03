@@ -29,7 +29,7 @@ class HomeAppliance extends Computer{
 public class Polymorphemism {
     public static void main(String[] args) {
         Computer obj = new Laptop();
-        obj.show();
+        obj.show();// one reference variable ie obj having many forms
 
         obj = new Phone();
         obj.show();

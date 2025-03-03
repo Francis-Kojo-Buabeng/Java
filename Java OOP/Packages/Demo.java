@@ -1,7 +1,7 @@
 import tools.*;
 public class Demo {
     public static void main(String[] args) {
-        AdvCalc obj = new AdvCalc();
+        AdvanceCalc obj = new AdvanceCalc();
         int result = obj.add(3, 2);
         int re = obj.sub(4, 4);
         int r1 = obj.div(4, 4);

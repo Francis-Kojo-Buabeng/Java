@@ -1,5 +1,5 @@
 package tools;
-public class Calc {
+public class SimpleCalc {
     public int add(int x, int y){
         return x + y;
     }

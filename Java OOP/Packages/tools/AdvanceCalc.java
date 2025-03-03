@@ -1,5 +1,5 @@
 package tools;
-public class AdvCalc extends Calc {
+public class AdvanceCalc extends SimpleCalc {
     public int mult(int x, int y){
         return x * y;
     }
