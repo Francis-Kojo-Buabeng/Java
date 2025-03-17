@@ -24,6 +24,7 @@ public class UserFreq {
                     numbers[j] = -1;
                 }
             }
+          
 
             System.out.println(numbers[i]+ " appears "+ count+ " times");
         }

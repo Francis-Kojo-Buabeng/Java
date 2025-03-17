@@ -51,5 +51,6 @@ public class MortgageCalculation {
 
         System.out.println("Mortgage: "+ formatedMortgage);
 
+        scanner.close();
     }
 }

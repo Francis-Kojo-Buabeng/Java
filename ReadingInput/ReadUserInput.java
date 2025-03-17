@@ -10,5 +10,6 @@ public class ReadUserInput {
         System.out.print("Enter your Age: ");
         Byte age = scanner.nextByte();
         System.out.println(name+", you're "+age+" years old");
+        scanner.close();
     }
 }

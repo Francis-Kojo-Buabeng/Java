@@ -38,6 +38,7 @@ public class Method {
         int result = add.addition(x, y);
         System.out.println("x + y = "+result);
 
+        scanner.close();
            
     }
     public static void SayHi(){

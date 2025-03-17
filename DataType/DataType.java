@@ -27,7 +27,8 @@ public class DataType {
         Point point2 = point1;
         point1.x = 5;
         System.out.println(point1);
+        System.out.println(point2);
         
-
+       
     }
 }
